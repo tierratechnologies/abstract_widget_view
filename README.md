@@ -11,16 +11,16 @@ A WidgetViewController pattern for separation of concerns
 
     class $NAME$ extends StatefulWidget {
       @override
-      _$NAME$Controller createState() => _$NAME$Controller();
+      $NAME$Controller createState() => $NAME$Controller();
     }
 
-    class _$NAME$Controller extends State<$NAME$> {
+    class $NAME$Controller extends State<$NAME$> {
       @override
-      Widget build(BuildContext context) => _$NAME$View(this);
+      Widget build(BuildContext context) => $NAME$View(this);
     }
 
-    class _$NAME$View extends WidgetView<$NAME$, _$NAME$Controller> {
-      _$NAME$View(_$NAME$Controller state) : super(state);
+    class $NAME$View extends WidgetView<$NAME$, $NAME$Controller> {
+      $NAME$View($NAME$Controller state) : super(state);
     @override
       Widget build(BuildContext context) {
         return Container($END$);
