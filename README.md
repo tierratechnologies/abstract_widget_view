@@ -30,7 +30,7 @@ A WidgetViewController pattern for separation of concerns
 
     2) Generate a new WidgetView that is related to an existing Controller - `wv`
     class $NAME$View extends WidgetView<$T1$, $T2$>{
-      const $NAME$View ($T2$ state, {Key key}) : super(state, key: key);
+      const $NAME$View ($T2$ state, {super.key}) : super(state);
 
       @override
       Widget build(BuildContext context){
