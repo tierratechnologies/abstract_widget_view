@@ -31,18 +31,18 @@
         ]
     },
     "Abstract Widget View": {
-        "prefix": "widv",
-        "description": "Generate Abstract Widget View for existing Controller",
-        "body": [
-            "// View for for ${1:name}",
-            "class _${1:name}${2:view}View extends WidgetView<${1:name}, ${1:name}Controller> {",
-            "\tconst _${1:name}${2:view}View(${1:name}Controller state, {Key? key,}) : super(state, key: key);",
-            "",
-            "\t@override",
-            "\tWidget build(BuildContext context) {",
-            "\treturn Container($0);",
-            "\t}",
-            "}"
-        ]
-    }
+		"prefix": "widv",
+		"description": "Generate Abstract Widget View for existing Controller",
+		"body": [
+			"// View for for ${1:name}",
+			"class _${1:name}${2:view}View extends WidgetView<${1:name}, ${1:name}Controller> {",
+			"\tconst _${1:name}${2:view}View(super.state);",
+			"",
+			"\t@override",
+			"\tWidget build(BuildContext context) {",
+			"\treturn Container($0);",
+			"\t}",
+			"}",
+		],
+	},
 }
