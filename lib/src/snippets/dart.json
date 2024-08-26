@@ -42,7 +42,7 @@
 			"\tWidget build(BuildContext context) {",
 			"\treturn Container($0);",
 			"\t}",
-			"}",
-		],
-	},
+			"}"
+		]
+	}
 }
