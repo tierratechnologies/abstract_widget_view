@@ -1,7 +1,8 @@
 name: abstract_widget_view
 description: A WidgetViewController pattern for seperatation of concerns
-version: 0.0.1
-homepage:
+version: 0.0.2
+# homepage:
+publish_to: none
 
 environment:
   sdk: '>=3.0.0 <4.0.0'  
@@ -15,5 +16,5 @@ dev_dependencies:
     sdk: flutter
 
 
-flutter:
+# flutter:
 

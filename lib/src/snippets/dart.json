@@ -1,0 +1,48 @@
+{
+    "Abstract Widget Controller & View": {
+        "prefix": "widcv",
+        "description": "Generate Abstract Widget Controller & View files",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:abstract_widget_view/abstract_widget_view.dart';",
+            "",
+            "// Widget for ${1:name}",
+            "class ${1:name} extends StatefulWidget {",
+            "\tconst ${1:name}({super.key,});",
+            "",
+            "\t@override",
+            "\t${1:name}Controller createState() => ${1:name}Controller();",
+            "}",
+            "// Controller for ${1:name}",
+            "class ${1:name}Controller extends State<${1:name}> {",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) => _${1:name}View(this);",
+            "}",
+            "// View for for ${1:name}",
+            "class _${1:name}View extends WidgetView<${1:name}, ${1:name}Controller> {",
+            "\tconst _${1:name}View(super.state);",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\treturn Container($0);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Abstract Widget View": {
+        "prefix": "widv",
+        "description": "Generate Abstract Widget View for existing Controller",
+        "body": [
+            "// View for for ${1:name}",
+            "class _${1:name}${2:view}View extends WidgetView<${1:name}, ${1:name}Controller> {",
+            "\tconst _${1:name}${2:view}View(${1:name}Controller state, {Key? key,}) : super(state, key: key);",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\treturn Container($0);",
+            "\t}",
+            "}"
+        ]
+    }
+}
